@@ -1,0 +1,218 @@
+
+{
+	"buildFiles" : [ "/home/anirudh/NJ/Git/artk_cv_android/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/artk_cv_android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libOpenThreads-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libOpenThreads",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libOpenThreads.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_java3.so",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv_core-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv_core",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_core.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv_imgcodecs-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv_imgcodecs",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_imgcodecs.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv_imgproc-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv_imgproc",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_imgproc.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv_objdetect-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv_objdetect",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_objdetect.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"lib_opencv_tracking-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib_opencv_tracking",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libopencv_tracking.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libar-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libar",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libar.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libar2-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libar2",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libar2.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libargsub_es-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libargsub_es",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libargsub_es.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libaricp-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libaricp",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libaricp.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libarmulti-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libarmulti",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libarmulti.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libarvideo-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libarvideo",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libarvideo.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libc++_shared-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libc++_shared",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libc++_shared.so",
+			"toolchain" : "2652083932250251978"
+		},
+		"libcpufeatures-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libcpufeatures",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libcpufeatures.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libcurl-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libcurl",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libcurl.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libeden-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libeden",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libeden.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libjpeg-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libjpeg",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libjpeg.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libkpm-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libkpm",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libkpm.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libutil-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libutil",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libutil.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libz-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "libz",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/jniLibs/armeabi-v7a/libz.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/artk_cv_android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/anirudh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/anirudh/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/anirudh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/anirudh/NJ/Git/artk_cv_android/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/anirudh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/anirudh/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/anirudh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/cpp/ARMarkerNFT.cpp",
+					"workingDirectory" : "/home/anirudh/NJ/Git/artk_cv_android/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/anirudh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/anirudh/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/anirudh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/anirudh/NJ/Git/artk_cv_android/app/src/main/cpp/trackingSub.cpp",
+					"workingDirectory" : "/home/anirudh/NJ/Git/artk_cv_android/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/anirudh/NJ/Git/artk_cv_android/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "2652083932250251978"
+		}
+	},
+	"toolchains" : 
+	{
+		"2652083932250251978" : 
+		{
+			"cCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

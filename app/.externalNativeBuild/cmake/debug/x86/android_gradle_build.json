@@ -1,0 +1,62 @@
+
+{
+	"buildFiles" : [ "/home/anirudh/NJ/Git/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/debug/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libar-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libar",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/armeabi-v7a/libar.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libar2-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libar2",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/armeabi-v7a/libar2.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libkpm-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libkpm",
+			"buildType" : "debug",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/x86/libkpm.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"native-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/debug/x86 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=/home/anirudh/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/linux-x86_64 --sysroot=/home/anirudh/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/anirudh/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/anirudh/NJ/Git/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/debug/x86"
+				}
+			],
+			"output" : "/home/anirudh/NJ/Git/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so",
+			"toolchain" : "2652083932250251978"
+		}
+	},
+	"toolchains" : 
+	{
+		"2652083932250251978" : 
+		{
+			"cCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

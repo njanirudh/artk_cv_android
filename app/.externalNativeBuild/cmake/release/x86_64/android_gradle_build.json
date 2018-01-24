@@ -1,0 +1,62 @@
+
+{
+	"buildFiles" : [ "/home/anirudh/NJ/Git/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"libar-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "libar",
+			"buildType" : "release",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/armeabi-v7a/libar.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libar2-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "libar2",
+			"buildType" : "release",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/armeabi-v7a/libar2.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"libkpm-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "libkpm",
+			"buildType" : "release",
+			"output" : "/home/anirudh/NJ/Git/app/src/main/jniLibs/x86_64/libkpm.a",
+			"toolchain" : "2652083932250251978"
+		},
+		"native-lib-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/anirudh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/release/x86_64 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/anirudh/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/anirudh/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include -isystem /home/anirudh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/anirudh/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/anirudh/NJ/Git/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/anirudh/NJ/Git/app/.externalNativeBuild/cmake/release/x86_64"
+				}
+			],
+			"output" : "/home/anirudh/NJ/Git/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
+			"toolchain" : "2652083932250251978"
+		}
+	},
+	"toolchains" : 
+	{
+		"2652083932250251978" : 
+		{
+			"cCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/anirudh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

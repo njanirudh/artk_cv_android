@@ -1,0 +1,7 @@
+# ninja log v5
+0	70	0	CMakeFiles/native-lib.dir/src/main/cpp/ARMarkerNFT.cpp.o	41befd9c9b3abdc3
+0	82	0	CMakeFiles/native-lib.dir/src/main/cpp/trackingSub.cpp.o	790aa1d108796a5c
+1	639	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	3ac1699a6370a89e
+640	1842	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	ae997096dcce9b96
+2	837	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	3ac1699a6370a89e
+837	1128	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	ae997096dcce9b96
