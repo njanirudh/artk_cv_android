@@ -1,4 +1,4 @@
-package com.example.anirudhnj.ar_java.Utilities;
+package com.example.anirudh.android_opencv_template.Utilities;
 
 /**
  * Created by anirudhnj on 09/11/17.

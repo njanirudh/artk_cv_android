@@ -14,7 +14,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
 
 # ======================OpenCV stuff===============================
 add_library( lib_opencv SHARED IMPORTED )
-set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libopencv_java3.so)
+set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION
+${CMAKE_CURRENT_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libopencv_java3.so)
 
 add_library(lib_opencv_core STATIC IMPORTED)
 set_target_properties(lib_opencv_core PROPERTIES IMPORTED_LOCATION
@@ -42,6 +43,15 @@ set_target_properties(lib_opencv_tracking PROPERTIES IMPORTED_LOCATION
 add_library(libz STATIC IMPORTED)
 set_target_properties(libz PROPERTIES IMPORTED_LOCATION
          ${CMAKE_SOURCE_DIR}/src/main/jniLibs/armeabi-v7a/libz.a)
+
+add_library(libEGL SHARED IMPORTED)
+set_target_properties(libEGL PROPERTIES IMPORTED_LOCATION
+         ${CMAKE_SOURCE_DIR}/src/main/jniLibs/armeabi-v7a/libEGL.so)
+
+add_library(libGLESv1_CM SHARED IMPORTED)
+set_target_properties(libGLESv1_CM PROPERTIES IMPORTED_LOCATION
+         ${CMAKE_SOURCE_DIR}/src/main/jniLibs/armeabi-v7a/libGLESv1_CM.so)
+
 
 add_library(libcurl STATIC IMPORTED)
 set_target_properties(libcurl PROPERTIES IMPORTED_LOCATION
@@ -138,6 +148,8 @@ find_library( # Sets the name of the path variable.
               # you want CMake to locate.
               log
               libz
+              libEGL
+              libGLESv1_CM
               )
 
 # Specifies libraries CMake should link to your target library. You
@@ -148,6 +160,8 @@ target_link_libraries( # Specifies the target library.
                        native-lib
 
                        #AR Toolkit Libs
+                       libEGL
+                       libGLESv1_CM
                        libc++_shared
                        libar2
                        libkpm
@@ -172,4 +186,5 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib}
-                        libz)
+                        libz
+                        )

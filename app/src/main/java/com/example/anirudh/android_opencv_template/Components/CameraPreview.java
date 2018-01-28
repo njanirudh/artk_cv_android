@@ -1,4 +1,4 @@
-package com.example.anirudhnj.ar_java.Components;
+package com.example.anirudh.android_opencv_template.Components;
 
 /**
  * Created by anirudhnj on 09/11/17.
@@ -20,9 +20,9 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.anirudhnj.ar_java.ImageProcessingCpp;
-import com.example.anirudhnj.ar_java.ImageProcessing.ImageProcessingJava;
-import com.example.anirudhnj.ar_java.Utilities.GlobalUtils;
+
+import com.example.anirudh.android_opencv_template.ImageProcessing;
+import com.example.anirudh.android_opencv_template.Utilities.GlobalUtils;
 
 import org.opencv.core.Rect2d;
 
@@ -42,15 +42,14 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private Context ctx;
     private SurfaceHolder surfaceHolder;
 
-    ImageProcessingJava imageProcessingJava;
-    ImageProcessingCpp imageProcessingCpp;
 
-    int PROCESSING_TYPE = 2;
+    int PROCESSING_TYPE = 1;
 
     //record video
     private MediaRecorder mMediaRecorder;
     private ImageView liveCamera;
 
+    private ImageProcessing imageProcessing;
 
     private float mDist = 0;
 
@@ -70,13 +69,12 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
         liveCamera = cameraView;
 
-        imageProcessingJava = new ImageProcessingJava(ctx);
-        imageProcessingCpp = new ImageProcessingCpp(ctx);
+        imageProcessing = new ImageProcessing(context);
+        imageProcessing.InitializeAR();
 
         initCamera();
-        imageProcessingCpp.SetReferenceImage();
 
-        liveCamera.setOnTouchListener(new View.OnTouchListener() {
+        liveCamera.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 System.out.println("Count " + event.getPointerCount());
@@ -144,7 +142,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
         params.setSceneMode(Camera.Parameters.SCENE_MODE_STEADYPHOTO);
         params.setAntibanding(Camera.Parameters.ANTIBANDING_AUTO);
-        params.setPictureSize(640, 480);
+        params.setPictureSize(320, 320);
 
         setFocusable(true);
         setFocusableInTouchMode(true);
@@ -209,8 +207,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             doTouchFocus(targetFocusRect);
         }
 
-        imageProcessingJava.resetTracker();
-        imageProcessingCpp.resetTracking();
     }
 
     public void doTouchFocus(final Rect tfocusRect) {
@@ -337,13 +333,11 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         if(PROCESS_IMAGE) {
 
             if(PROCESSING_TYPE == 1) {
-
                 Rect2d rect2d = new Rect2d(100, 100, 100, 100);
-                mBitmap = imageProcessingJava.trackImage(mBitmap, rect2d);
+                imageProcessing.RunDetection(mBitmap);
                 liveCamera.setImageBitmap(mBitmap);
             }else{
                 //Rect2d rect2d = new Rect2d(100, 100, 100, 100);
-                mBitmap = imageProcessingCpp.PerformComparison(mBitmap);
                 liveCamera.setImageBitmap(mBitmap);
 
             }

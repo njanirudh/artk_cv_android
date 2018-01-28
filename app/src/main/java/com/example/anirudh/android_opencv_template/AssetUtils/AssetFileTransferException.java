@@ -35,7 +35,7 @@
  *
  */
 
-package org.artoolkit.ar.base.assets;
+package com.example.anirudh.android_opencv_template.AssetUtils;
 
 public class AssetFileTransferException extends Exception {
 

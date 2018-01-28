@@ -47,7 +47,7 @@
  *
  */
 
-package org.artoolkit.ar.samples.ARMovie;
+package com.example.anirudh.android_opencv_template.GlComponents;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -115,7 +115,7 @@ public class MovieController implements SurfaceTexture.OnFrameAvailableListener,
 		mMediaPlayer.setOnVideoSizeChangedListener(this);
 		try {
 			mMediaPlayer.setDataSource(moviePath);
-			ARMovieActivity.nativeMovieInit(this, new WeakReference<MovieController>(this)); // Pass a reference to this instance to the native side.
+			//ARMovieActivity.nativeMovieInit(this, new WeakReference<MovieController>(this)); // Pass a reference to this instance to the native side.
 		} catch (IOException ioe) {
 			Log.e(TAG, "Cannot open movie file. " + ioe.toString());
 			mMediaPlayer.release();
@@ -344,7 +344,7 @@ public class MovieController implements SurfaceTexture.OnFrameAvailableListener,
 			mMediaPlayer.release();
 			mMediaPlayer = null;
 			mMediaPlayerIsPrepped = false;
-			ARMovieActivity.nativeMovieFinal(); // Clean up the reference to this instance held by the native side.
+			//ARMovieActivity.nativeMovieFinal(); // Clean up the reference to this instance held by the native side.
 		}
 	}
 	
